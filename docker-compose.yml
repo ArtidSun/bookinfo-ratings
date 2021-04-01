@@ -1,7 +1,7 @@
 services:
   ratings-dev:
     build: .
-    image: ghcr.io/gift25880/bookinfo-ratings:dev
+    image: ghcr.io/artidsun/bookinfo-ratings:dev
     ports:
       - "8080:8080"
     environment:
@@ -9,7 +9,7 @@ services:
       MONGO_DB_URL: mongodb://mongodb:27017/ratings
   ratings-uat:
     build: .
-    image: ghcr.io/gift25880/bookinfo-ratings:uat
+    image: ghcr.io/artidsun/bookinfo-ratings:uat
     ports:
       - "8080:8080"
     environment:
@@ -17,7 +17,7 @@ services:
       MONGO_DB_URL: mongodb://mongodb:27017/ratings
   ratings-prd:
     build: .
-    image: ghcr.io/gift25880/bookinfo-ratings:prd
+    image: ghcr.io/artidsun/bookinfo-ratings:prd
     ports:
       - "8080:8080"
     environment:
