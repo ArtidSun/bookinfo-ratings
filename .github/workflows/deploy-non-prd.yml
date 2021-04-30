@@ -19,7 +19,6 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v2
         with:
-          context: .
           push: true
           tags: ghcr.io/artidsun/bookinfo-ratings:${{ env.ENV_NAME }}
   deploy:
