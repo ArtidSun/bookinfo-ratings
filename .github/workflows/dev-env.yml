@@ -47,7 +47,7 @@ jobs:
                 "COMMIT_SHA": "${{ github.sha }}"
               }
             }
-  health-check-page:
+  acceptance_test:
     needs: deploy
     runs-on: ubuntu-20.04
     steps:
